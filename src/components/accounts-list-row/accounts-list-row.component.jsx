@@ -1,10 +1,18 @@
 import React from 'react';
 import './accounts-list-row.styles.scss';
 
-export default function AccountsRowList({account, accountName, currencyCode, amount, transactionType}) {
+import { Link } from 'react-router-dom';
+
+export default function AccountsRowList({ account, accountName, currencyCode, amount, transactionType }) {
     return (
         <div className='accounts-list-row'>
-            <div className='accounts-list-row__column'>{account}</div>
+            <Link to={{
+                pathname: `/account/${account}`,
+                state: { account, accountName, currencyCode, amount, transactionType }
+            }}
+            >
+                <div className='accounts-list-row__column'>{account}</div>
+            </Link>
             <div className='accounts-list-row__column'>{accountName}</div>
             <div className='accounts-list-row__column'>{currencyCode}</div>
             <div className='accounts-list-row__column'>{amount}</div>

@@ -1,0 +1,10 @@
+.account-details {
+    padding: 20px;
+    .account-details__row {
+        span {
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-right: 5px;
+        }
+    }
+}

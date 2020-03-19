@@ -5,4 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+
+    .header__title {
+        text-decoration: none;
+    }
 }
