@@ -1,4 +1,14 @@
 .accounts-summary-page {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+
+    .filters-section__filters-title {
+        padding: 0 20px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
     .accounts-list-header {
         display: flex;
         flex-direction: row;
