@@ -1,0 +1,15 @@
+.accounts-summary-page {
+    .accounts-list-header {
+        display: flex;
+        flex-direction: row;
+        flex-flow: nowrap;
+
+        .accounts-list-header__row {
+            margin: 10px 20px;
+            min-width: 160px;
+            text-align: left;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

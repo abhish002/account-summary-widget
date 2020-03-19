@@ -1,0 +1,15 @@
+.accounts-list-row {
+    display: flex;
+    flex-direction: column;
+    flex-flow: nowrap;
+
+    .accounts-list-row__column {
+        margin: 10px 20px;
+        text-align: left;
+        min-width: 160px;
+
+        &.--align-amount {
+            text-align: right;
+        }
+    }
+}
