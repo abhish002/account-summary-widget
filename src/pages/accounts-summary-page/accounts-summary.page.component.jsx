@@ -15,6 +15,8 @@ export default class AccountsSummaryPage extends Component {
             filterBy: '',
             filterByValue: '',
             filteredTransactions: [],
+            filteredTransactionsByName: [],
+            filteredTransactionsByType: []
         }
     }
 
@@ -32,12 +34,13 @@ export default class AccountsSummaryPage extends Component {
 
         this.setState({
             filteredTransactions,
+            filteredTransactionsByName: filteredTransactions,
         });
     }
 
     handleSelectAccountType = (transactionType) => {
         console.log(transactionType);
-        const filteredTransactions = this.state.transactions.filter(transaction =>
+        const filteredTransactions = this.state.filteredTransactionsByName.filter(transaction =>
             transaction.transactionType === transactionType);
 
         this.setState({
